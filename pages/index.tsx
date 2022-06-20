@@ -21,6 +21,8 @@ const Home: NextPage = () => {
     setResults(data);
   }
 
+  
+
   return (
     <div>
       <h1>Search</h1>
