@@ -41,7 +41,11 @@ const Home: NextPage = () => {
     })
 
     const totalPrice = data.reduce((total: number, product: Product) => {
+<<<<<<< HEAD
       return total + product.price;
+=======
+      return total + data.price;
+>>>>>>> c1b19cafe1ff0294e9344590c5d7b81b97f0dc19
     }, 0)
 
     setResults({totalPrice, data: products});
