@@ -22,7 +22,6 @@ const Home: NextPage = () => {
   });
 
   async function handleSearch(event: FormEvent) {
-
     event.preventDefault()
 
     if (!search.trim()) {
@@ -42,7 +41,7 @@ const Home: NextPage = () => {
     })
 
     const totalPrice = data.reduce((total: number, product: Product) => {
-      return total + data.price;
+      return total + product.price;
     }, 0)
 
     setResults({totalPrice, data: products});
